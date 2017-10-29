@@ -1,16 +1,29 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexberryOrmMongoDbDataServiceDemo.Objects", "Objects\FlexberryOrmMongoDbDataServiceDemo.Objects.csproj", "{81883279-9F8B-4D7B-B57E-5ABCB7CA7EE7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexberryOrmMongoDbDataServiceDemo.ODataBackend", "ODataBackend\FlexberryOrmMongoDbDataServiceDemo.ODataBackend.csproj", "{DA7F12C1-37B7-4CDE-B564-9F40E51CADED}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{54B50228-1996-4C49-9AC1-125E8C104A79}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+		WebConfigTuner.ps1 = WebConfigTuner.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UML", "UML", "{7B05E797-DEC7-46C5-B6D8-496CD230BF0C}"
+	ProjectSection(SolutionItems) = preProject
+		FlexberryOrmMongoDbDataServiceDemo.crp = FlexberryOrmMongoDbDataServiceDemo.crp
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-Debug|Any CPU = Debug|Any CPU
-Release|Any CPU = Release|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{81883279-9F8B-4D7B-B57E-5ABCB7CA7EE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -24,5 +37,8 @@ Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2513EA6-8DAA-46A0-9BE2-DB09D0ADB655}
 	EndGlobalSection
 EndGlobal
