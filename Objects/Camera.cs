@@ -52,7 +52,7 @@ namespace NewPlatform.FlexberryOrmMongoDbDataServiceDemo
         
         private int fGroupId;
         
-        private int fGroupName;
+        private string fGroupName;
         
         private bool fActual;
         
@@ -135,14 +135,15 @@ namespace NewPlatform.FlexberryOrmMongoDbDataServiceDemo
         // *** Start programmer edit section *** (Camera.GroupName CustomAttributes)
 
         // *** End programmer edit section *** (Camera.GroupName CustomAttributes)
-        public virtual int GroupName
+        [StrLen(255)]
+        public virtual string GroupName
         {
             get
             {
                 // *** Start programmer edit section *** (Camera.GroupName Get start)
 
                 // *** End programmer edit section *** (Camera.GroupName Get start)
-                int result = this.fGroupName;
+                string result = this.fGroupName;
                 // *** Start programmer edit section *** (Camera.GroupName Get end)
 
                 // *** End programmer edit section *** (Camera.GroupName Get end)
