@@ -111,8 +111,7 @@
       <HintPath>..\packages\MongoDB.Driver.Core.2.4.4\lib\net45\MongoDB.Driver.Core.dll</HintPath>
     </Reference>
     <Reference Include="NewPlatform.Flexberry.ORM.MongoDbDataService, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NewPlatform.Flexberry.ORM.MongoDbDataService.0.1.0-alpha02\lib\net45\NewPlatform.Flexberry.ORM.MongoDbDataService.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\NewPlatform.Flexberry.ORM.MongoDbDataService.0.1.0-alpha03\lib\net45\NewPlatform.Flexberry.ORM.MongoDbDataService.dll</HintPath>
     </Reference>
     <Reference Include="NewPlatform.Flexberry.ORM.ODataService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=11027c24ff789609, processorArchitecture=MSIL">
       <HintPath>..\packages\NewPlatform.Flexberry.ORM.ODataService.2.0.0\lib\net45\NewPlatform.Flexberry.ORM.ODataService.dll</HintPath>
