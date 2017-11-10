@@ -73,7 +73,7 @@ namespace NewPlatform.FlexberryOrmMongoDbDataServiceDemo
         
         private System.DateTime fCreateTime;
         
-        private System.DateTime fEditTime;
+        private ICSSoft.STORMNET.UserDataTypes.NullableDateTime fEditTime;
         
         private NewPlatform.FlexberryOrmMongoDbDataServiceDemo.DetailArrayOfCamera fcameras;
         
@@ -339,14 +339,14 @@ namespace NewPlatform.FlexberryOrmMongoDbDataServiceDemo
         // *** Start programmer edit section *** (RegObject.EditTime CustomAttributes)
 
         // *** End programmer edit section *** (RegObject.EditTime CustomAttributes)
-        public virtual System.DateTime EditTime
+        public virtual ICSSoft.STORMNET.UserDataTypes.NullableDateTime EditTime
         {
             get
             {
                 // *** Start programmer edit section *** (RegObject.EditTime Get start)
 
                 // *** End programmer edit section *** (RegObject.EditTime Get start)
-                System.DateTime result = this.fEditTime;
+                ICSSoft.STORMNET.UserDataTypes.NullableDateTime result = this.fEditTime;
                 // *** Start programmer edit section *** (RegObject.EditTime Get end)
 
                 // *** End programmer edit section *** (RegObject.EditTime Get end)
