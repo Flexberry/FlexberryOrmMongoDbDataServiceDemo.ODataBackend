@@ -26,6 +26,7 @@ namespace NewPlatform.FlexberryOrmMongoDbDataServiceDemo
     // *** Start programmer edit section *** (Event CustomAttributes)
 
     // *** End programmer edit section *** (Event CustomAttributes)
+    [PublishName("Event")]
     [ClassStorage("events")]
     [PrimaryKeyStorage("uid")]
     [AutoAltered()]
