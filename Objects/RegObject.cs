@@ -34,7 +34,7 @@ namespace NewPlatform.FlexberryOrmMongoDbDataServiceDemo
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("RegObjectE", new string[] {
             "ObjectId as \'Object id\'",
-            "town as \'Town\'",
+            "Town as \'Town\'",
             "ObjectName as \'Object name\'",
             "Address as \'Address\'",
             "Latitude as \'Latitude\'",
@@ -42,11 +42,11 @@ namespace NewPlatform.FlexberryOrmMongoDbDataServiceDemo
             "Actual as \'Actual\'",
             "CreateTime as \'Create time\'",
             "EditTime as \'Edit time\'"})]
-    [AssociatedDetailViewAttribute("RegObjectE", "cameras", "CameraE", true, "", "Cameras", true, new string[] {
+    [AssociatedDetailViewAttribute("RegObjectE", "Cameras", "CameraE", true, "", "Cameras", true, new string[] {
             ""})]
     [View("RegObjectL", new string[] {
             "ObjectId as \'Object id\'",
-            "town as \'Town\'",
+            "Town as \'Town\'",
             "ObjectName as \'Object name\'",
             "Address as \'Address\'",
             "Latitude as \'Latitude\'",
@@ -59,7 +59,7 @@ namespace NewPlatform.FlexberryOrmMongoDbDataServiceDemo
         
         private int fObjectId;
         
-        private string ftown;
+        private string fTown;
         
         private string fObjectName;
         
@@ -75,7 +75,7 @@ namespace NewPlatform.FlexberryOrmMongoDbDataServiceDemo
         
         private ICSSoft.STORMNET.UserDataTypes.NullableDateTime fEditTime;
         
-        private NewPlatform.FlexberryOrmMongoDbDataServiceDemo.DetailArrayOfCamera fcameras;
+        private NewPlatform.FlexberryOrmMongoDbDataServiceDemo.DetailArrayOfCamera fCameras;
         
         // *** Start programmer edit section *** (RegObject CustomMembers)
 
@@ -114,34 +114,35 @@ namespace NewPlatform.FlexberryOrmMongoDbDataServiceDemo
         }
         
         /// <summary>
-        /// town.
+        /// Town.
         /// </summary>
-        // *** Start programmer edit section *** (RegObject.town CustomAttributes)
+        // *** Start programmer edit section *** (RegObject.Town CustomAttributes)
 
-        // *** End programmer edit section *** (RegObject.town CustomAttributes)
+        // *** End programmer edit section *** (RegObject.Town CustomAttributes)
+        [PropertyStorage("town")]
         [StrLen(255)]
-        public virtual string town
+        public virtual string Town
         {
             get
             {
-                // *** Start programmer edit section *** (RegObject.town Get start)
+                // *** Start programmer edit section *** (RegObject.Town Get start)
 
-                // *** End programmer edit section *** (RegObject.town Get start)
-                string result = this.ftown;
-                // *** Start programmer edit section *** (RegObject.town Get end)
+                // *** End programmer edit section *** (RegObject.Town Get start)
+                string result = this.fTown;
+                // *** Start programmer edit section *** (RegObject.Town Get end)
 
-                // *** End programmer edit section *** (RegObject.town Get end)
+                // *** End programmer edit section *** (RegObject.Town Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (RegObject.town Set start)
+                // *** Start programmer edit section *** (RegObject.Town Set start)
 
-                // *** End programmer edit section *** (RegObject.town Set start)
-                this.ftown = value;
-                // *** Start programmer edit section *** (RegObject.town Set end)
+                // *** End programmer edit section *** (RegObject.Town Set start)
+                this.fTown = value;
+                // *** Start programmer edit section *** (RegObject.Town Set end)
 
-                // *** End programmer edit section *** (RegObject.town Set end)
+                // *** End programmer edit section *** (RegObject.Town Set end)
             }
         }
         
@@ -367,35 +368,35 @@ namespace NewPlatform.FlexberryOrmMongoDbDataServiceDemo
         /// <summary>
         /// Reg object.
         /// </summary>
-        // *** Start programmer edit section *** (RegObject.cameras CustomAttributes)
+        // *** Start programmer edit section *** (RegObject.Cameras CustomAttributes)
 
-        // *** End programmer edit section *** (RegObject.cameras CustomAttributes)
-        public virtual NewPlatform.FlexberryOrmMongoDbDataServiceDemo.DetailArrayOfCamera cameras
+        // *** End programmer edit section *** (RegObject.Cameras CustomAttributes)
+        public virtual NewPlatform.FlexberryOrmMongoDbDataServiceDemo.DetailArrayOfCamera Cameras
         {
             get
             {
-                // *** Start programmer edit section *** (RegObject.cameras Get start)
+                // *** Start programmer edit section *** (RegObject.Cameras Get start)
 
-                // *** End programmer edit section *** (RegObject.cameras Get start)
-                if ((this.fcameras == null))
+                // *** End programmer edit section *** (RegObject.Cameras Get start)
+                if ((this.fCameras == null))
                 {
-                    this.fcameras = new NewPlatform.FlexberryOrmMongoDbDataServiceDemo.DetailArrayOfCamera(this);
+                    this.fCameras = new NewPlatform.FlexberryOrmMongoDbDataServiceDemo.DetailArrayOfCamera(this);
                 }
-                NewPlatform.FlexberryOrmMongoDbDataServiceDemo.DetailArrayOfCamera result = this.fcameras;
-                // *** Start programmer edit section *** (RegObject.cameras Get end)
+                NewPlatform.FlexberryOrmMongoDbDataServiceDemo.DetailArrayOfCamera result = this.fCameras;
+                // *** Start programmer edit section *** (RegObject.Cameras Get end)
 
-                // *** End programmer edit section *** (RegObject.cameras Get end)
+                // *** End programmer edit section *** (RegObject.Cameras Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (RegObject.cameras Set start)
+                // *** Start programmer edit section *** (RegObject.Cameras Set start)
 
-                // *** End programmer edit section *** (RegObject.cameras Set start)
-                this.fcameras = value;
-                // *** Start programmer edit section *** (RegObject.cameras Set end)
+                // *** End programmer edit section *** (RegObject.Cameras Set start)
+                this.fCameras = value;
+                // *** Start programmer edit section *** (RegObject.Cameras Set end)
 
-                // *** End programmer edit section *** (RegObject.cameras Set end)
+                // *** End programmer edit section *** (RegObject.Cameras Set end)
             }
         }
         

@@ -33,75 +33,75 @@ namespace NewPlatform.FlexberryOrmMongoDbDataServiceDemo
     [Caption("События")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("EventE", new string[] {
-            "typeid as \'Typeid\'",
-            "photo_id as \'Photo_id\'",
-            "timestamp as \'Timestamp\'",
-            "datetime as \'Datetime\'",
-            "object_id as \'Object_id\'",
-            "camera_direction_id as \'Camera_direction_id\'",
-            "camera_id as \'Camera_id\'",
-            "grz as \'Grz\'",
-            "speed as \'Speed\'",
-            "year as \'Year\'",
-            "month as \'Month\'",
-            "day as \'Day\'",
-            "hour as \'Hour\'",
-            "min as \'Min\'",
-            "sec as \'Sec\'",
+            "Typeid as \'Typeid\'",
+            "Photo_id as \'Photo_id\'",
+            "Timestamp as \'Timestamp\'",
+            "Datetime as \'Datetime\'",
+            "Object_id as \'Object_id\'",
+            "Camera_direction_id as \'Camera_direction_id\'",
+            "Camera_id as \'Camera_id\'",
+            "Grz as \'Grz\'",
+            "Speed as \'Speed\'",
+            "Year as \'Year\'",
+            "Month as \'Month\'",
+            "Day as \'Day\'",
+            "Hour as \'Hour\'",
+            "Min as \'Min\'",
+            "Sec as \'Sec\'",
             "RegObject as \'Reg object\'",
-            "RegObject.town as \'Town\'",
+            "RegObject.Town as \'Town\'",
             "Camera as \'Camera\'",
             "Camera.CameraId as \'Camera id\'"})]
     [View("EventL", new string[] {
-            "typeid as \'Typeid\'",
-            "photo_id as \'Photo_id\'",
-            "timestamp as \'Timestamp\'",
-            "datetime as \'Datetime\'",
-            "object_id as \'Object_id\'",
-            "camera_direction_id as \'Camera_direction_id\'",
-            "camera_id as \'Camera_id\'",
-            "grz as \'Grz\'",
-            "speed as \'Speed\'",
-            "year as \'Year\'",
-            "month as \'Month\'",
-            "day as \'Day\'",
-            "hour as \'Hour\'",
-            "min as \'Min\'",
-            "sec as \'Sec\'",
-            "RegObject.town as \'Town\'",
+            "Typeid as \'Typeid\'",
+            "Photo_id as \'Photo_id\'",
+            "Timestamp as \'Timestamp\'",
+            "Datetime as \'Datetime\'",
+            "Object_id as \'Object_id\'",
+            "Camera_direction_id as \'Camera_direction_id\'",
+            "Camera_id as \'Camera_id\'",
+            "Grz as \'Grz\'",
+            "Speed as \'Speed\'",
+            "Year as \'Year\'",
+            "Month as \'Month\'",
+            "Day as \'Day\'",
+            "Hour as \'Hour\'",
+            "Min as \'Min\'",
+            "Sec as \'Sec\'",
+            "RegObject.Town as \'Town\'",
             "Camera.CameraId as \'Camera id\'"})]
     public class Event : ICSSoft.STORMNET.DataObject
     {
         
-        private string ftypeid;
+        private string fTypeid;
         
-        private string fphoto_id;
+        private string fPhoto_id;
         
-        private long ftimestamp;
+        private long fTimestamp;
         
-        private System.DateTime fdatetime;
+        private System.DateTime fDatetime;
         
-        private string fobject_id;
+        private string fObject_id;
         
-        private int fcamera_direction_id;
+        private int fCamera_direction_id;
         
-        private string fcamera_id;
+        private string fCamera_id;
         
-        private string fgrz;
+        private string fGrz;
         
-        private int fspeed;
+        private int fSpeed;
         
-        private int fyear;
+        private int fYear;
         
-        private int fmonth;
+        private int fMonth;
         
-        private int fday;
+        private int fDay;
         
-        private int fhour;
+        private int fHour;
         
-        private int fmin;
+        private int fMin;
         
-        private int fsec;
+        private int fSec;
         
         private NewPlatform.FlexberryOrmMongoDbDataServiceDemo.RegObject fRegObject;
         
@@ -113,472 +113,487 @@ namespace NewPlatform.FlexberryOrmMongoDbDataServiceDemo
 
         
         /// <summary>
-        /// typeid.
+        /// Typeid.
         /// </summary>
-        // *** Start programmer edit section *** (Event.typeid CustomAttributes)
+        // *** Start programmer edit section *** (Event.Typeid CustomAttributes)
 
-        // *** End programmer edit section *** (Event.typeid CustomAttributes)
+        // *** End programmer edit section *** (Event.Typeid CustomAttributes)
+        [PropertyStorage("typeid")]
         [StrLen(255)]
-        public virtual string typeid
+        public virtual string Typeid
         {
             get
             {
-                // *** Start programmer edit section *** (Event.typeid Get start)
+                // *** Start programmer edit section *** (Event.Typeid Get start)
 
-                // *** End programmer edit section *** (Event.typeid Get start)
-                string result = this.ftypeid;
-                // *** Start programmer edit section *** (Event.typeid Get end)
+                // *** End programmer edit section *** (Event.Typeid Get start)
+                string result = this.fTypeid;
+                // *** Start programmer edit section *** (Event.Typeid Get end)
 
-                // *** End programmer edit section *** (Event.typeid Get end)
+                // *** End programmer edit section *** (Event.Typeid Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (Event.typeid Set start)
+                // *** Start programmer edit section *** (Event.Typeid Set start)
 
-                // *** End programmer edit section *** (Event.typeid Set start)
-                this.ftypeid = value;
-                // *** Start programmer edit section *** (Event.typeid Set end)
+                // *** End programmer edit section *** (Event.Typeid Set start)
+                this.fTypeid = value;
+                // *** Start programmer edit section *** (Event.Typeid Set end)
 
-                // *** End programmer edit section *** (Event.typeid Set end)
+                // *** End programmer edit section *** (Event.Typeid Set end)
             }
         }
         
         /// <summary>
-        /// photo_id.
+        /// Photo_id.
         /// </summary>
-        // *** Start programmer edit section *** (Event.photo_id CustomAttributes)
+        // *** Start programmer edit section *** (Event.Photo_id CustomAttributes)
 
-        // *** End programmer edit section *** (Event.photo_id CustomAttributes)
+        // *** End programmer edit section *** (Event.Photo_id CustomAttributes)
+        [PropertyStorage("photo_id")]
         [StrLen(255)]
-        public virtual string photo_id
+        public virtual string Photo_id
         {
             get
             {
-                // *** Start programmer edit section *** (Event.photo_id Get start)
+                // *** Start programmer edit section *** (Event.Photo_id Get start)
 
-                // *** End programmer edit section *** (Event.photo_id Get start)
-                string result = this.fphoto_id;
-                // *** Start programmer edit section *** (Event.photo_id Get end)
+                // *** End programmer edit section *** (Event.Photo_id Get start)
+                string result = this.fPhoto_id;
+                // *** Start programmer edit section *** (Event.Photo_id Get end)
 
-                // *** End programmer edit section *** (Event.photo_id Get end)
+                // *** End programmer edit section *** (Event.Photo_id Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (Event.photo_id Set start)
+                // *** Start programmer edit section *** (Event.Photo_id Set start)
 
-                // *** End programmer edit section *** (Event.photo_id Set start)
-                this.fphoto_id = value;
-                // *** Start programmer edit section *** (Event.photo_id Set end)
+                // *** End programmer edit section *** (Event.Photo_id Set start)
+                this.fPhoto_id = value;
+                // *** Start programmer edit section *** (Event.Photo_id Set end)
 
-                // *** End programmer edit section *** (Event.photo_id Set end)
+                // *** End programmer edit section *** (Event.Photo_id Set end)
             }
         }
         
         /// <summary>
-        /// timestamp.
+        /// Timestamp.
         /// </summary>
-        // *** Start programmer edit section *** (Event.timestamp CustomAttributes)
+        // *** Start programmer edit section *** (Event.Timestamp CustomAttributes)
 
-        // *** End programmer edit section *** (Event.timestamp CustomAttributes)
-        public virtual long timestamp
+        // *** End programmer edit section *** (Event.Timestamp CustomAttributes)
+        [PropertyStorage("timestamp")]
+        public virtual long Timestamp
         {
             get
             {
-                // *** Start programmer edit section *** (Event.timestamp Get start)
+                // *** Start programmer edit section *** (Event.Timestamp Get start)
 
-                // *** End programmer edit section *** (Event.timestamp Get start)
-                long result = this.ftimestamp;
-                // *** Start programmer edit section *** (Event.timestamp Get end)
+                // *** End programmer edit section *** (Event.Timestamp Get start)
+                long result = this.fTimestamp;
+                // *** Start programmer edit section *** (Event.Timestamp Get end)
 
-                // *** End programmer edit section *** (Event.timestamp Get end)
+                // *** End programmer edit section *** (Event.Timestamp Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (Event.timestamp Set start)
+                // *** Start programmer edit section *** (Event.Timestamp Set start)
 
-                // *** End programmer edit section *** (Event.timestamp Set start)
-                this.ftimestamp = value;
-                // *** Start programmer edit section *** (Event.timestamp Set end)
+                // *** End programmer edit section *** (Event.Timestamp Set start)
+                this.fTimestamp = value;
+                // *** Start programmer edit section *** (Event.Timestamp Set end)
 
-                // *** End programmer edit section *** (Event.timestamp Set end)
+                // *** End programmer edit section *** (Event.Timestamp Set end)
             }
         }
         
         /// <summary>
-        /// datetime.
+        /// Datetime.
         /// </summary>
-        // *** Start programmer edit section *** (Event.datetime CustomAttributes)
+        // *** Start programmer edit section *** (Event.Datetime CustomAttributes)
 
-        // *** End programmer edit section *** (Event.datetime CustomAttributes)
-        public virtual System.DateTime datetime
+        // *** End programmer edit section *** (Event.Datetime CustomAttributes)
+        [PropertyStorage("datetime")]
+        public virtual System.DateTime Datetime
         {
             get
             {
-                // *** Start programmer edit section *** (Event.datetime Get start)
+                // *** Start programmer edit section *** (Event.Datetime Get start)
 
-                // *** End programmer edit section *** (Event.datetime Get start)
-                System.DateTime result = this.fdatetime;
-                // *** Start programmer edit section *** (Event.datetime Get end)
+                // *** End programmer edit section *** (Event.Datetime Get start)
+                System.DateTime result = this.fDatetime;
+                // *** Start programmer edit section *** (Event.Datetime Get end)
 
-                // *** End programmer edit section *** (Event.datetime Get end)
+                // *** End programmer edit section *** (Event.Datetime Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (Event.datetime Set start)
+                // *** Start programmer edit section *** (Event.Datetime Set start)
 
-                // *** End programmer edit section *** (Event.datetime Set start)
-                this.fdatetime = value;
-                // *** Start programmer edit section *** (Event.datetime Set end)
+                // *** End programmer edit section *** (Event.Datetime Set start)
+                this.fDatetime = value;
+                // *** Start programmer edit section *** (Event.Datetime Set end)
 
-                // *** End programmer edit section *** (Event.datetime Set end)
+                // *** End programmer edit section *** (Event.Datetime Set end)
             }
         }
         
         /// <summary>
-        /// object_id.
+        /// Object_id.
         /// </summary>
-        // *** Start programmer edit section *** (Event.object_id CustomAttributes)
+        // *** Start programmer edit section *** (Event.Object_id CustomAttributes)
 
-        // *** End programmer edit section *** (Event.object_id CustomAttributes)
+        // *** End programmer edit section *** (Event.Object_id CustomAttributes)
+        [PropertyStorage("object_id")]
         [StrLen(255)]
-        public virtual string object_id
+        public virtual string Object_id
         {
             get
             {
-                // *** Start programmer edit section *** (Event.object_id Get start)
+                // *** Start programmer edit section *** (Event.Object_id Get start)
 
-                // *** End programmer edit section *** (Event.object_id Get start)
-                string result = this.fobject_id;
-                // *** Start programmer edit section *** (Event.object_id Get end)
+                // *** End programmer edit section *** (Event.Object_id Get start)
+                string result = this.fObject_id;
+                // *** Start programmer edit section *** (Event.Object_id Get end)
 
-                // *** End programmer edit section *** (Event.object_id Get end)
+                // *** End programmer edit section *** (Event.Object_id Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (Event.object_id Set start)
+                // *** Start programmer edit section *** (Event.Object_id Set start)
 
-                // *** End programmer edit section *** (Event.object_id Set start)
-                this.fobject_id = value;
-                // *** Start programmer edit section *** (Event.object_id Set end)
+                // *** End programmer edit section *** (Event.Object_id Set start)
+                this.fObject_id = value;
+                // *** Start programmer edit section *** (Event.Object_id Set end)
 
-                // *** End programmer edit section *** (Event.object_id Set end)
+                // *** End programmer edit section *** (Event.Object_id Set end)
             }
         }
         
         /// <summary>
-        /// camera_direction_id.
+        /// Camera_direction_id.
         /// </summary>
-        // *** Start programmer edit section *** (Event.camera_direction_id CustomAttributes)
+        // *** Start programmer edit section *** (Event.Camera_direction_id CustomAttributes)
 
-        // *** End programmer edit section *** (Event.camera_direction_id CustomAttributes)
-        public virtual int camera_direction_id
+        // *** End programmer edit section *** (Event.Camera_direction_id CustomAttributes)
+        [PropertyStorage("camera_direction_id")]
+        public virtual int Camera_direction_id
         {
             get
             {
-                // *** Start programmer edit section *** (Event.camera_direction_id Get start)
+                // *** Start programmer edit section *** (Event.Camera_direction_id Get start)
 
-                // *** End programmer edit section *** (Event.camera_direction_id Get start)
-                int result = this.fcamera_direction_id;
-                // *** Start programmer edit section *** (Event.camera_direction_id Get end)
+                // *** End programmer edit section *** (Event.Camera_direction_id Get start)
+                int result = this.fCamera_direction_id;
+                // *** Start programmer edit section *** (Event.Camera_direction_id Get end)
 
-                // *** End programmer edit section *** (Event.camera_direction_id Get end)
+                // *** End programmer edit section *** (Event.Camera_direction_id Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (Event.camera_direction_id Set start)
+                // *** Start programmer edit section *** (Event.Camera_direction_id Set start)
 
-                // *** End programmer edit section *** (Event.camera_direction_id Set start)
-                this.fcamera_direction_id = value;
-                // *** Start programmer edit section *** (Event.camera_direction_id Set end)
+                // *** End programmer edit section *** (Event.Camera_direction_id Set start)
+                this.fCamera_direction_id = value;
+                // *** Start programmer edit section *** (Event.Camera_direction_id Set end)
 
-                // *** End programmer edit section *** (Event.camera_direction_id Set end)
+                // *** End programmer edit section *** (Event.Camera_direction_id Set end)
             }
         }
         
         /// <summary>
-        /// camera_id.
+        /// Camera_id.
         /// </summary>
-        // *** Start programmer edit section *** (Event.camera_id CustomAttributes)
+        // *** Start programmer edit section *** (Event.Camera_id CustomAttributes)
 
-        // *** End programmer edit section *** (Event.camera_id CustomAttributes)
+        // *** End programmer edit section *** (Event.Camera_id CustomAttributes)
+        [PropertyStorage("camera_id")]
         [StrLen(255)]
-        public virtual string camera_id
+        public virtual string Camera_id
         {
             get
             {
-                // *** Start programmer edit section *** (Event.camera_id Get start)
+                // *** Start programmer edit section *** (Event.Camera_id Get start)
 
-                // *** End programmer edit section *** (Event.camera_id Get start)
-                string result = this.fcamera_id;
-                // *** Start programmer edit section *** (Event.camera_id Get end)
+                // *** End programmer edit section *** (Event.Camera_id Get start)
+                string result = this.fCamera_id;
+                // *** Start programmer edit section *** (Event.Camera_id Get end)
 
-                // *** End programmer edit section *** (Event.camera_id Get end)
+                // *** End programmer edit section *** (Event.Camera_id Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (Event.camera_id Set start)
+                // *** Start programmer edit section *** (Event.Camera_id Set start)
 
-                // *** End programmer edit section *** (Event.camera_id Set start)
-                this.fcamera_id = value;
-                // *** Start programmer edit section *** (Event.camera_id Set end)
+                // *** End programmer edit section *** (Event.Camera_id Set start)
+                this.fCamera_id = value;
+                // *** Start programmer edit section *** (Event.Camera_id Set end)
 
-                // *** End programmer edit section *** (Event.camera_id Set end)
+                // *** End programmer edit section *** (Event.Camera_id Set end)
             }
         }
         
         /// <summary>
-        /// grz.
+        /// Grz.
         /// </summary>
-        // *** Start programmer edit section *** (Event.grz CustomAttributes)
+        // *** Start programmer edit section *** (Event.Grz CustomAttributes)
 
-        // *** End programmer edit section *** (Event.grz CustomAttributes)
+        // *** End programmer edit section *** (Event.Grz CustomAttributes)
+        [PropertyStorage("grz")]
         [StrLen(255)]
-        public virtual string grz
+        public virtual string Grz
         {
             get
             {
-                // *** Start programmer edit section *** (Event.grz Get start)
+                // *** Start programmer edit section *** (Event.Grz Get start)
 
-                // *** End programmer edit section *** (Event.grz Get start)
-                string result = this.fgrz;
-                // *** Start programmer edit section *** (Event.grz Get end)
+                // *** End programmer edit section *** (Event.Grz Get start)
+                string result = this.fGrz;
+                // *** Start programmer edit section *** (Event.Grz Get end)
 
-                // *** End programmer edit section *** (Event.grz Get end)
+                // *** End programmer edit section *** (Event.Grz Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (Event.grz Set start)
+                // *** Start programmer edit section *** (Event.Grz Set start)
 
-                // *** End programmer edit section *** (Event.grz Set start)
-                this.fgrz = value;
-                // *** Start programmer edit section *** (Event.grz Set end)
+                // *** End programmer edit section *** (Event.Grz Set start)
+                this.fGrz = value;
+                // *** Start programmer edit section *** (Event.Grz Set end)
 
-                // *** End programmer edit section *** (Event.grz Set end)
+                // *** End programmer edit section *** (Event.Grz Set end)
             }
         }
         
         /// <summary>
-        /// speed.
+        /// Speed.
         /// </summary>
-        // *** Start programmer edit section *** (Event.speed CustomAttributes)
+        // *** Start programmer edit section *** (Event.Speed CustomAttributes)
 
-        // *** End programmer edit section *** (Event.speed CustomAttributes)
-        public virtual int speed
+        // *** End programmer edit section *** (Event.Speed CustomAttributes)
+        [PropertyStorage("speed")]
+        public virtual int Speed
         {
             get
             {
-                // *** Start programmer edit section *** (Event.speed Get start)
+                // *** Start programmer edit section *** (Event.Speed Get start)
 
-                // *** End programmer edit section *** (Event.speed Get start)
-                int result = this.fspeed;
-                // *** Start programmer edit section *** (Event.speed Get end)
+                // *** End programmer edit section *** (Event.Speed Get start)
+                int result = this.fSpeed;
+                // *** Start programmer edit section *** (Event.Speed Get end)
 
-                // *** End programmer edit section *** (Event.speed Get end)
+                // *** End programmer edit section *** (Event.Speed Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (Event.speed Set start)
+                // *** Start programmer edit section *** (Event.Speed Set start)
 
-                // *** End programmer edit section *** (Event.speed Set start)
-                this.fspeed = value;
-                // *** Start programmer edit section *** (Event.speed Set end)
+                // *** End programmer edit section *** (Event.Speed Set start)
+                this.fSpeed = value;
+                // *** Start programmer edit section *** (Event.Speed Set end)
 
-                // *** End programmer edit section *** (Event.speed Set end)
+                // *** End programmer edit section *** (Event.Speed Set end)
             }
         }
         
         /// <summary>
-        /// year.
+        /// Year.
         /// </summary>
-        // *** Start programmer edit section *** (Event.year CustomAttributes)
+        // *** Start programmer edit section *** (Event.Year CustomAttributes)
 
-        // *** End programmer edit section *** (Event.year CustomAttributes)
-        public virtual int year
+        // *** End programmer edit section *** (Event.Year CustomAttributes)
+        [PropertyStorage("year")]
+        public virtual int Year
         {
             get
             {
-                // *** Start programmer edit section *** (Event.year Get start)
+                // *** Start programmer edit section *** (Event.Year Get start)
 
-                // *** End programmer edit section *** (Event.year Get start)
-                int result = this.fyear;
-                // *** Start programmer edit section *** (Event.year Get end)
+                // *** End programmer edit section *** (Event.Year Get start)
+                int result = this.fYear;
+                // *** Start programmer edit section *** (Event.Year Get end)
 
-                // *** End programmer edit section *** (Event.year Get end)
+                // *** End programmer edit section *** (Event.Year Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (Event.year Set start)
+                // *** Start programmer edit section *** (Event.Year Set start)
 
-                // *** End programmer edit section *** (Event.year Set start)
-                this.fyear = value;
-                // *** Start programmer edit section *** (Event.year Set end)
+                // *** End programmer edit section *** (Event.Year Set start)
+                this.fYear = value;
+                // *** Start programmer edit section *** (Event.Year Set end)
 
-                // *** End programmer edit section *** (Event.year Set end)
+                // *** End programmer edit section *** (Event.Year Set end)
             }
         }
         
         /// <summary>
-        /// month.
+        /// Month.
         /// </summary>
-        // *** Start programmer edit section *** (Event.month CustomAttributes)
+        // *** Start programmer edit section *** (Event.Month CustomAttributes)
 
-        // *** End programmer edit section *** (Event.month CustomAttributes)
-        public virtual int month
+        // *** End programmer edit section *** (Event.Month CustomAttributes)
+        [PropertyStorage("month")]
+        public virtual int Month
         {
             get
             {
-                // *** Start programmer edit section *** (Event.month Get start)
+                // *** Start programmer edit section *** (Event.Month Get start)
 
-                // *** End programmer edit section *** (Event.month Get start)
-                int result = this.fmonth;
-                // *** Start programmer edit section *** (Event.month Get end)
+                // *** End programmer edit section *** (Event.Month Get start)
+                int result = this.fMonth;
+                // *** Start programmer edit section *** (Event.Month Get end)
 
-                // *** End programmer edit section *** (Event.month Get end)
+                // *** End programmer edit section *** (Event.Month Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (Event.month Set start)
+                // *** Start programmer edit section *** (Event.Month Set start)
 
-                // *** End programmer edit section *** (Event.month Set start)
-                this.fmonth = value;
-                // *** Start programmer edit section *** (Event.month Set end)
+                // *** End programmer edit section *** (Event.Month Set start)
+                this.fMonth = value;
+                // *** Start programmer edit section *** (Event.Month Set end)
 
-                // *** End programmer edit section *** (Event.month Set end)
+                // *** End programmer edit section *** (Event.Month Set end)
             }
         }
         
         /// <summary>
-        /// day.
+        /// Day.
         /// </summary>
-        // *** Start programmer edit section *** (Event.day CustomAttributes)
+        // *** Start programmer edit section *** (Event.Day CustomAttributes)
 
-        // *** End programmer edit section *** (Event.day CustomAttributes)
-        public virtual int day
+        // *** End programmer edit section *** (Event.Day CustomAttributes)
+        [PropertyStorage("day")]
+        public virtual int Day
         {
             get
             {
-                // *** Start programmer edit section *** (Event.day Get start)
+                // *** Start programmer edit section *** (Event.Day Get start)
 
-                // *** End programmer edit section *** (Event.day Get start)
-                int result = this.fday;
-                // *** Start programmer edit section *** (Event.day Get end)
+                // *** End programmer edit section *** (Event.Day Get start)
+                int result = this.fDay;
+                // *** Start programmer edit section *** (Event.Day Get end)
 
-                // *** End programmer edit section *** (Event.day Get end)
+                // *** End programmer edit section *** (Event.Day Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (Event.day Set start)
+                // *** Start programmer edit section *** (Event.Day Set start)
 
-                // *** End programmer edit section *** (Event.day Set start)
-                this.fday = value;
-                // *** Start programmer edit section *** (Event.day Set end)
+                // *** End programmer edit section *** (Event.Day Set start)
+                this.fDay = value;
+                // *** Start programmer edit section *** (Event.Day Set end)
 
-                // *** End programmer edit section *** (Event.day Set end)
+                // *** End programmer edit section *** (Event.Day Set end)
             }
         }
         
         /// <summary>
-        /// hour.
+        /// Hour.
         /// </summary>
-        // *** Start programmer edit section *** (Event.hour CustomAttributes)
+        // *** Start programmer edit section *** (Event.Hour CustomAttributes)
 
-        // *** End programmer edit section *** (Event.hour CustomAttributes)
-        public virtual int hour
+        // *** End programmer edit section *** (Event.Hour CustomAttributes)
+        [PropertyStorage("hour")]
+        public virtual int Hour
         {
             get
             {
-                // *** Start programmer edit section *** (Event.hour Get start)
+                // *** Start programmer edit section *** (Event.Hour Get start)
 
-                // *** End programmer edit section *** (Event.hour Get start)
-                int result = this.fhour;
-                // *** Start programmer edit section *** (Event.hour Get end)
+                // *** End programmer edit section *** (Event.Hour Get start)
+                int result = this.fHour;
+                // *** Start programmer edit section *** (Event.Hour Get end)
 
-                // *** End programmer edit section *** (Event.hour Get end)
+                // *** End programmer edit section *** (Event.Hour Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (Event.hour Set start)
+                // *** Start programmer edit section *** (Event.Hour Set start)
 
-                // *** End programmer edit section *** (Event.hour Set start)
-                this.fhour = value;
-                // *** Start programmer edit section *** (Event.hour Set end)
+                // *** End programmer edit section *** (Event.Hour Set start)
+                this.fHour = value;
+                // *** Start programmer edit section *** (Event.Hour Set end)
 
-                // *** End programmer edit section *** (Event.hour Set end)
+                // *** End programmer edit section *** (Event.Hour Set end)
             }
         }
         
         /// <summary>
-        /// min.
+        /// Min.
         /// </summary>
-        // *** Start programmer edit section *** (Event.min CustomAttributes)
+        // *** Start programmer edit section *** (Event.Min CustomAttributes)
 
-        // *** End programmer edit section *** (Event.min CustomAttributes)
-        public virtual int min
+        // *** End programmer edit section *** (Event.Min CustomAttributes)
+        [PropertyStorage("min")]
+        public virtual int Min
         {
             get
             {
-                // *** Start programmer edit section *** (Event.min Get start)
+                // *** Start programmer edit section *** (Event.Min Get start)
 
-                // *** End programmer edit section *** (Event.min Get start)
-                int result = this.fmin;
-                // *** Start programmer edit section *** (Event.min Get end)
+                // *** End programmer edit section *** (Event.Min Get start)
+                int result = this.fMin;
+                // *** Start programmer edit section *** (Event.Min Get end)
 
-                // *** End programmer edit section *** (Event.min Get end)
+                // *** End programmer edit section *** (Event.Min Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (Event.min Set start)
+                // *** Start programmer edit section *** (Event.Min Set start)
 
-                // *** End programmer edit section *** (Event.min Set start)
-                this.fmin = value;
-                // *** Start programmer edit section *** (Event.min Set end)
+                // *** End programmer edit section *** (Event.Min Set start)
+                this.fMin = value;
+                // *** Start programmer edit section *** (Event.Min Set end)
 
-                // *** End programmer edit section *** (Event.min Set end)
+                // *** End programmer edit section *** (Event.Min Set end)
             }
         }
         
         /// <summary>
-        /// sec.
+        /// Sec.
         /// </summary>
-        // *** Start programmer edit section *** (Event.sec CustomAttributes)
+        // *** Start programmer edit section *** (Event.Sec CustomAttributes)
 
-        // *** End programmer edit section *** (Event.sec CustomAttributes)
-        public virtual int sec
+        // *** End programmer edit section *** (Event.Sec CustomAttributes)
+        [PropertyStorage("sec")]
+        public virtual int Sec
         {
             get
             {
-                // *** Start programmer edit section *** (Event.sec Get start)
+                // *** Start programmer edit section *** (Event.Sec Get start)
 
-                // *** End programmer edit section *** (Event.sec Get start)
-                int result = this.fsec;
-                // *** Start programmer edit section *** (Event.sec Get end)
+                // *** End programmer edit section *** (Event.Sec Get start)
+                int result = this.fSec;
+                // *** Start programmer edit section *** (Event.Sec Get end)
 
-                // *** End programmer edit section *** (Event.sec Get end)
+                // *** End programmer edit section *** (Event.Sec Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (Event.sec Set start)
+                // *** Start programmer edit section *** (Event.Sec Set start)
 
-                // *** End programmer edit section *** (Event.sec Set start)
-                this.fsec = value;
-                // *** Start programmer edit section *** (Event.sec Set end)
+                // *** End programmer edit section *** (Event.Sec Set start)
+                this.fSec = value;
+                // *** Start programmer edit section *** (Event.Sec Set end)
 
-                // *** End programmer edit section *** (Event.sec Set end)
+                // *** End programmer edit section *** (Event.Sec Set end)
             }
         }
         
