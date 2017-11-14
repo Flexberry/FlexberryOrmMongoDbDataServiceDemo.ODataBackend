@@ -249,6 +249,10 @@
     <Reference Include="System.EnterpriseServices">
       <HintPath>System.EnterpriseServices</HintPath>
     </Reference>
+    <ProjectReference Include="..\EmberFlexberry.Objects\EmberFlexberry.Objects.csproj">
+      <Project>{5E0EC16B-BFC5-4531-BDBA-3589FE2B60E7}</Project>
+      <Name>EmberFlexberry.Objects</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Objects\FlexberryOrmMongoDbDataServiceDemo.Objects.csproj">
       <Project>{81883279-9f8b-4d7b-b57e-5abcb7ca7ee7}</Project>
       <Name>FlexberryOrmMongoDbDataServiceDemo.Objects</Name>
