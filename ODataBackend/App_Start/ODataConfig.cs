@@ -3,18 +3,17 @@
     using System;
     using System.Reflection;
     using System.Web.Http;
-
-    using ICSSoft.STORMNET;
-    using ICSSoft.Services;
-    using IIS.Caseberry.Logging.Objects;
+    using System.Web.Http.Dispatcher;
 
     using Microsoft.Practices.Unity;
+
+    using ICSSoft.Services;
+    using IIS.Caseberry.Logging.Objects;
 
     using NewPlatform.Flexberry;
     using NewPlatform.Flexberry.AspNet.WebApi.Cors;
     using NewPlatform.Flexberry.ORM.ODataService;
     using NewPlatform.Flexberry.ORM.ODataService.Extensions;
-    using NewPlatform.Flexberry.ORM.ODataService.Functions;
     using NewPlatform.Flexberry.ORM.ODataService.Model;
     using NewPlatform.Flexberry.Services;
 
@@ -47,35 +46,24 @@
             // Use Unity as WebAPI dependency resolver
             config.DependencyResolver = new UnityDependencyResolver(container);
 
-            // Create EDM model builder
-            var assemblies = new[]
+            // Map OData Service with all objects
+            config.MapODataServiceDataObjectRoute(new DefaultDataObjectEdmModelBuilder(new[]
             {
                 Assembly.Load("FlexberryOrmMongoDbDataServiceDemo.Objects"),
+                Assembly.Load("EmberFlexberry.Objects"),
                 typeof(ApplicationLog).Assembly,
                 typeof(UserSetting).Assembly,
                 typeof(FlexberryUserSetting).Assembly,
                 typeof(Lock).Assembly
-            };
-            var builder = new DefaultDataObjectEdmModelBuilder(assemblies);
+            }));
 
-            // Map OData Service
-            var token = config.MapODataServiceDataObjectRoute(builder);
+            // Map OData Service only with objects from Ember Flexberry Dummy
+            config.MapODataServiceDataObjectRoute(new DefaultDataObjectEdmModelBuilder(new[]
+            {
+                Assembly.Load("EmberFlexberry.Objects"),
+            }), "bypass", "bypass");
 
-            // User functions
-            token.Functions.Register(new Func<QueryParameters, string>(Test));
-
-            // Event handlers
-            token.Events.CallbackAfterCreate = CallbackAfterCreate;
-        }
-
-        private static void CallbackAfterCreate(DataObject dataObject)
-        {
-            // TODO: implement handler
-        }
-
-        private static string Test(QueryParameters queryParameters)
-        {
-            return "Hello world!";
+            config.Services.Replace(typeof(IHttpControllerActivator), new ControllerActivator(container));
         }
     }
 }
